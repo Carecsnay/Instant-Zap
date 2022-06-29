@@ -35,7 +35,7 @@ function sendToWhatsapp(message) {
         urlApi = "https://api.whatsapp.com/send?phone=55";
     }
 
-    window.open(urlApi + "?phone=" + phone + "&text=" + text, "_blank");
+    window.open(urlApi + phone + "&text=" + text, "_blank");
 }
 
 
