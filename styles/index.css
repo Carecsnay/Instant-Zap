@@ -2,7 +2,7 @@
     --main-background-color: #daf7c1;
     --secondary-background-color: #c5f59b;
     --svg-icon-color:#8696a0;
-    --href-color: #8696a0;
+    --href-color: ;
     --panel-background-color: #008069;
 
     font-family: 'Roboto', sans-serif;
@@ -15,7 +15,7 @@ body {
     background-image: url(../src/images/background.jpg);
 }
 
-div {
+body div {
     background-color: var(--main-background-color);
     width: 320px;
     margin: 8px;
@@ -27,21 +27,28 @@ div {
     align-items: center;
 }
 
-div:hover {
+body div:hover {
     background-color: var(--secondary-background-color);
     box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
-
-
-svg {
+body svg {
     color: var(--svg-icon-color);
     width: 20px;
     height: 20px;
 }
 
-a {
+footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--href-color);
     text-decoration: none;
-    color: black;
+    font-weight: bolder;
+    font-size: 17px;
 }
