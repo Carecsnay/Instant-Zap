@@ -12,8 +12,7 @@ function sendToWhatsapp(message) {
     text = window.encodeURIComponent(text);
 
     //ARMAZENA O NUMERO NA VARIÁVEL PHONE
-    // let phone = prompt("Insira um número válido, formato aceitável (XX) XXXXX-XXXX ");
-    phone = 86981270024;
+    let phone = prompt("Insira um número válido, formato aceitável (XX) XXXXX-XXXX ");
     //VERIFICA SE O NUMERO ESTÁ VAZIO
     if (phone == "") {
         alert("Por favor, informe o número corretamente");
