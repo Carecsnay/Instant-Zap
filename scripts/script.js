@@ -15,7 +15,7 @@ function sendToWhatsapp(message) {
     let phone = prompt("Insira um número válido, formato aceitável (XX) XXXXX-XXXX ");
     //VERIFICA SE O NUMERO ESTÁ VAZIO
     if (phone == "") {
-        alert("Por favor, informe o número corretamente");
+        alert("Por favor, informe um número válido!");
         return;
     }
 
