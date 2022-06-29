@@ -40,6 +40,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
+    text-align: center;
 }
 
 a {
@@ -53,4 +54,5 @@ a {
     height: 50px;
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
 }
