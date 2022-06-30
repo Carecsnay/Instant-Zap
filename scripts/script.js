@@ -45,4 +45,3 @@ function sendToWhatsapp(message) {
 
 //MANEIRA NOVA DE SE FAZER MANDAR MSG PARA O WHATSAPP (NÃO PRECISA DO WHATSAPP INSTALADO)
 //window.open("https://web.whatsapp.com/send?phone=55" + phone + "&text=" + text, "_blank");
-
