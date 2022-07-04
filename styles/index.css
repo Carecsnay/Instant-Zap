@@ -79,6 +79,7 @@ footer a {
     font-weight: bolder;
 }
 
+
 @media (min-width: 300px) and (max-width: 324px) {
     header {
         font-size: 18px;
@@ -91,5 +92,31 @@ footer a {
     footer {
         bottom: 40px;
         font-size: 14.4px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 299px) {
+    body svg {
+        width: 13.3px;
+        height: 13.3px;
+    }
+
+    header {
+        font-size: 14.8px;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    body div{
+        font-size: 13px;
+
+    }
+    footer {
+        margin: 10px 10px 0px 10px;
+        position: relative;
+        font-size: 12.5px;
     }
 }
