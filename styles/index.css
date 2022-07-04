@@ -134,6 +134,7 @@ footer a {
 @media (min-width: 300px) and (max-width: 403px) {
     header {
         font-size: 18px;
+        margin: 0 0 10px 0;
     }
 
     header p {
@@ -153,6 +154,7 @@ footer a {
     footer {
         position: relative;
         font-size: 14.4px;
+        margin: 10px 0 0 0;
     }
 }
 
