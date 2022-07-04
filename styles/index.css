@@ -67,7 +67,7 @@ footer {
     font-size: 17.5px;
 
     /* Posição do Rodapé*/
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -98,7 +98,7 @@ footer a {
     }
 
     footer {
-        position: fixed;
+        bottom: 0;
         font-size: 20px;
     }
 } 
