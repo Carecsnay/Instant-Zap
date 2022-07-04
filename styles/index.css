@@ -78,8 +78,60 @@ footer a {
     font-weight: bolder;
 }
 
+@media (min-width: 760px) and (max-width: 770px) {
+    header {
+        font-size: 20px;
+    }
 
-@media (min-width: 300px) and (max-width: 324px) {
+    header p {
+        font-size: 16.4px;
+    }
+
+    body svg {
+        width: 13.3px;
+        height: 13.3px;
+    }
+
+    body div{
+        font-size: 15px;
+
+    }
+
+    footer {
+        position: fixed;
+        font-size: 20px;
+    }
+} 
+
+@media (min-width: 0px) and (max-width: 759px) {
+    header {
+        font-size: 19px;
+        margin: 0 0 10px 0;
+    }
+
+    header p {
+        font-size: 16.4px;
+        margin: 0;
+    }
+
+    body svg {
+        width: 13.3px;
+        height: 13.3px;
+    }
+
+    body div{
+        font-size: 15px;
+
+    }
+
+    footer {
+        position: relative;
+        font-size: 16.4px;
+        margin: 10px 0 0 0;
+    }
+} 
+
+@media (min-width: 300px) and (max-width: 403px) {
     header {
         font-size: 18px;
     }
@@ -88,8 +140,18 @@ footer a {
         font-size: 14.4px;
     }
 
+    body svg {
+        width: 13.3px;
+        height: 13.3px;
+    }
+
+    body div{
+        font-size: 13px;
+
+    }
+
     footer {
-        bottom: 40px;
+        position: relative;
         font-size: 14.4px;
     }
 }
@@ -116,6 +178,6 @@ footer a {
     footer {
         margin: 10px 10px 0px 10px;
         position: relative;
-        font-size: 12.5px;
+        font-size: 13px;
     }
 }
