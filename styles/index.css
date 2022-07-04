@@ -1,11 +1,30 @@
 :root {
     --main-background-color: #daf7c1;
     --secondary-background-color: #c5f59b;
-    --svg-icon-color:#8696a0;
-    --href-color: ;
+    --svg-icon-color: #8696a0;
     --panel-background-color: #008069;
 
     font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    margin: 10px 10px 0 10px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: bolder;
+    color: var(--panel-background-color);
+
+}
+
+header p {
+    color: var(--panel-background-color);
+    font-weight: 100;
+    font-size: 17.5px;
+    margin: 5px;
+    padding: 0;
 }
 
 body {
@@ -25,6 +44,7 @@ body div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: justify;
 }
 
 body div:hover {
@@ -40,15 +60,37 @@ body svg {
 }
 
 footer {
-    display: block;
-    justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 10px 18px 10px;
+    color: var(--panel-background-color);
+    font-size: 17.5px;
+
+    /* Posição do Rodapé*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
     color: var(--href-color);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 17px;
+}
+
+@media (min-width: 300px) and (max-width: 324px) {
+    header {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 14.4px;
+    }
+
+    footer {
+        bottom: 40px;
+        font-size: 14.4px;
+    }
+
 }
