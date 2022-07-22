@@ -18,12 +18,13 @@
         <h1>⚡FRASES RÁPIDAS PARA COBRANÇAS⚡</h1>
         <a href="https://carecsnay.github.io/Instant-Zap/">🏠Voltar</a>
     </span>
-   
+
 
     <div onclick="sendToWhatsapp(this)">
         <p>
             Olá, tudo bem?<br>
-            Reparamos que tem uma pendência no seu pagamento de sua mensalidade, gostaríamos de combinar uma nova data para que o valor seja quitado. Quando seria melhor para você?
+            Reparamos que tem uma pendência no seu pagamento de sua mensalidade, gostaríamos de combinar uma nova data
+            para que o valor seja quitado. Quando seria melhor para você?
         </p>
         <img src="../src/images/logo.jpg">
     </div>
@@ -31,7 +32,8 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Olá, como vai?<br>
-            Sabemos que o momento atual não está fácil, por isto gostaríamos de conversar sobre suas faturas em aberto e negociar a melhor solução para todos. Conte conosco para ajudá-lo a resolver esta questão.
+            Sabemos que o momento atual não está fácil, por isto gostaríamos de conversar sobre suas faturas em aberto e
+            negociar a melhor solução para todos. Conte conosco para ajudá-lo a resolver esta questão.
         </p>
         <img src="../src/images/logo.jpg">
     </div>
@@ -39,7 +41,8 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Olá!<br>
-            Ainda não identificamos o seu pagamento em nosso sistema. Que tal entrar em contato com nossa equipe para chegarmos a uma solução? Aguardamos seu retorno.
+            Ainda não identificamos o seu pagamento em nosso sistema. Que tal entrar em contato com nossa equipe para
+            chegarmos a uma solução? Aguardamos seu retorno.
         </p>
         <img src="../src/images/logo.jpg">
     </div>
@@ -47,7 +50,8 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Olá!<br>
-            Consta em aberto o pagamento referente as *declarações anuais* de sua empresa , gostaríamos de combinar uma nova data para que o valor seja quitado. Quando seria melhor para você?
+            Consta em aberto o pagamento referente as *declarações anuais* de sua empresa , gostaríamos de combinar uma
+            nova data para que o valor seja quitado. Quando seria melhor para você?
         </p>
         <img src="../src/images/logo.jpg">
     </div>
@@ -55,7 +59,8 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Olá!<br>
-            Consta em aberto o pagamento referente as *declarações anuais* de sua empresa e também *mensalidade*, gostaríamos de combinar uma nova data para que o valor seja quitado. Quando seria melhor para você?
+            Consta em aberto o pagamento referente as *declarações anuais* de sua empresa e também *mensalidade*,
+            gostaríamos de combinar uma nova data para que o valor seja quitado. Quando seria melhor para você?
         </p>
         <img src="../src/images/logo.jpg">
     </div>
@@ -64,7 +69,7 @@
         <p>
             Olá!<br>
             Segue relatório<br><br>
-            
+
             05/2022, <br>
             DECLARAÇÕES ANUAIS<br><br>
 
@@ -76,17 +81,22 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             *Bruno B. (Escritório Ivan Contábil):* <br><br>Saudações!<br><br>
-            Por gentileza, passe aqui no escritório para regularizar seus débitos (prazo máximo 
+            Por gentileza, passe aqui no escritório para regularizar seus débitos (prazo máximo
             <script>
-                var mes = new Date().getMonth();
-                var ano = new Date().getFullYear();
+                const mes = new Date().getMonth() + 2; // +2 meses para o vencimento.
+                const ano = new Date().getFullYear(); 
 
-                if (mes < 9) {
-                    document.write("31/0" + mes + "/" + ano);
-                } else {
-                    document.write(mes + "/" + ano);
+                function ultimoDiaMes(mes, ano) {
+                    return new Date(ano, mes, 0).getDate();
                 }
-            </script>), após a data o Ivan autorizou deixar de entregar suas obrigações mensais. Não nos responsabilizamos por eventuais multas ou encargos gerados decorrente a sua inadimplência com o escritório.
+
+                if (mes <= 9) {
+                    document.write(ultimoDiaMes(mes, ano) + "/0" + mes + "/" + ano);
+                } else {
+                    document.write(ultimoDiaMes(mes, ano) + "/" + mes + "/" + ano);
+                }
+            </script>), após a data o Ivan autorizou deixar de entregar suas obrigações mensais. Não nos
+            responsabilizamos por eventuais multas ou encargos gerados decorrente a sua inadimplência com o escritório.
         </p>
         <img src="../src/images/logo.jpg">
     </div>
