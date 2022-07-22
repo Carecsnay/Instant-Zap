@@ -63,12 +63,30 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Olá!<br>
-            Segue relatório
+            Segue relatório<br><br>
             
-            05/2022, 
-            DECLARAÇÕES ANUAIS
+            05/2022, <br>
+            DECLARAÇÕES ANUAIS<br><br>
 
             Total *200,00*
+        </p>
+        <img src="../src/images/logo.jpg">
+    </div>
+
+    <div onclick="sendToWhatsapp(this)">
+        <p>
+            *Bruno B. (Escritório Ivan Contábil):* <br><br>Saudações!<br><br>
+            Por gentileza, passe aqui no escritório para regularizar seus débitos (prazo máximo 
+            <script>
+                var mes = new Date().getMonth();
+                var ano = new Date().getFullYear();
+
+                if (mes < 9) {
+                    document.write("31/0" + mes + "/" + ano);
+                } else {
+                    document.write(mes + "/" + ano);
+                }
+            </script>), após a data o Ivan autorizou deixar de entregar suas obrigações mensais. Não nos responsabilizamos por eventuais multas ou encargos gerados decorrente a sua inadimplência com o escritório.
         </p>
         <img src="../src/images/logo.jpg">
     </div>
