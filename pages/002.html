@@ -22,15 +22,15 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Saudações!<br>
-            Por gentileza me mande a soma dos valores passados nas maquininhas referente ao mês
+            Por gentileza me mande a soma dos valores passados nas maquininhas referente ao mês <strong id="dataA"></strong>
             <script>
                 var mes = new Date().getMonth();
                 var ano = new Date().getFullYear();
 
-                if (mes < 9) {
-                    document.write("0" + mes + "/" + ano + ".");
+                if (mes <= 10) {
+                    document.getElementById("dataA").innerHTML = "0" + mes + "/" + ano + ".";
                 } else {
-                    document.write(mes + "/" + ano + ".");
+                    document.getElementById("dataA").innerHTML = mes + "/" + ano + ".";
                 }
             </script>
         </p>
@@ -40,15 +40,15 @@
     <div onclick="sendToWhatsapp(this)">
         <p>
             Saudações!<br>
-            Por gentileza nos mande as notas fiscais de prestação de serviços referente ao mês
+            Por gentileza nos mande as notas fiscais de prestação de serviços referente ao mês <strong id="dataB"></strong>
             <script>
                 var mes = new Date().getMonth();
                 var ano = new Date().getFullYear();
 
-                if (mes < 9) {
-                    document.write("0" + mes + "/" + ano + ".");
+                if (mes <= 10) {
+                    document.getElementById("dataB").innerHTML = "0" + mes + "/" + ano + ".";
                 } else {
-                    document.write(mes + "/" + ano + ".");
+                    document.getElementById("dataB").innerHTML = mes + "/" + ano + ".";
                 }
             </script>
         </p>
