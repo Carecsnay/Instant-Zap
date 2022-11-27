@@ -22,16 +22,20 @@
 
     <div onclick="sendToWhatsapp(this)">
         <p>
+            <strong>
+                <ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast>
+            </strong><br><br>
             Saudações!<br>
-            Por gentileza me mande a soma dos valores passados nas maquininhas referente ao mês <strong id="dataA"></strong>
+            Por gentileza me mande a soma dos valores passados nas maquininhas referente ao mês <ast>*</ast><strong id="dataA"></strong><ast>*</ast>
+            
             <script>
                 var mes = new Date().getMonth();
                 var ano = new Date().getFullYear();
 
-                if (mes <= 9) {
-                    document.getElementById("dataA").innerHTML = "0" + mes + "/" + ano + ".";
+                if (mes < 10) {
+                    document.querySelector("#dataA").innerHTML = "0" + mes + "/" + ano + ".";
                 } else {
-                    document.getElementById("dataA").innerHTML = mes + "/" + ano + ".";
+                    document.querySelector("#dataA").innerHTML = mes + "/" + ano + ".";
                 }
             </script>
         </p>
@@ -40,16 +44,17 @@
 
     <div onclick="sendToWhatsapp(this)">
         <p>
+            <strong><ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast></strong><br><br>
             Saudações!<br>
-            Por gentileza nos mande as notas fiscais de prestação de serviços referente ao mês <strong id="dataB"></strong>
+            Por gentileza nos mande as notas fiscais de prestação de serviços referente ao mês <ast>*</ast><strong id="dataB"></strong><ast>*</ast>
             <script>
                 var mes = new Date().getMonth();
                 var ano = new Date().getFullYear();
 
                 if (mes <= 9) {
-                    document.getElementById("dataB").innerHTML = "0" + mes + "/" + ano + ".";
+                    document.querySelector("#dataB").innerHTML = "0" + mes + "/" + ano + ".";
                 } else {
-                    document.getElementById("dataB").innerHTML = mes + "/" + ano + ".";
+                    document.querySelector("#dataB").innerHTML = mes + "/" + ano + ".";
                 }
             </script>
         </p>
@@ -58,6 +63,7 @@
 
     <div onclick="sendToWhatsapp(this)">
         <p>
+            <strong><ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast></strong><br><br>
             Olá!<br>
             Estou necessitando com urgência de seu certificado digital, quando possível retorne esta mensagem!
         </p>
@@ -66,6 +72,7 @@
 
     <div onclick="sendToWhatsapp(this)">
         <p>
+            <strong><ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast></strong><br><br>
             Oi, tudo bem?<br>
             Estou necessitando fazer acesso remoto para pegar as notas fiscais, quando possível retorne.
         </p>
@@ -74,6 +81,7 @@
 
     <div onclick="sendToWhatsapp(this)">
         <p>
+            <strong><ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast></strong><br><br>
             Agendamento concluído.<br>
             Depois eu conecto novamente para terminar o atendimento, obrigado!
         </p>
@@ -82,6 +90,7 @@
 
     <div onclick="sendToWhatsapp(this)">
         <p>
+            <strong><ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast></strong><br><br>
             Olá novamente! <br>
             Podemos dar continuidade ao atendimento?
         </p>

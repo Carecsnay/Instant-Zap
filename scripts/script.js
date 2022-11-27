@@ -8,11 +8,10 @@ function sendToWhatsapp(message) {
 
     //CAPTURA SOMENTE O TEXTO DA TAG "P" E ARMAZENA NA VARIAVEL TEXT
     let text = message.firstElementChild.innerText;
-    //TROCANDO AS TAGS DE NEGRITO POR *
-    let maskProcessed = text.replaceAll("Bruno B. (Escritório Ivan Contábil):", "*Bruno B. (Escritório Ivan Contábil):*");
 
     //ENCONDANDO PARA O WHATSAPP ENTENDER A MENSAGEM
-    text = window.encodeURIComponent(maskProcessed);
+    text = window.encodeURIComponent(text);
+   
 
     //ARMAZENA O NUMERO NA VARIÁVEL PHONE
     let phone = prompt("Insira um número válido, formato aceitável (XX) XXXXX-XXXX ");

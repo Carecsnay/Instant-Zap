@@ -14,6 +14,11 @@ body {
     /* background-size: cover; <------ Força a imagem a cobrir toda a tela proporcionalmente. */
 }
 
+/* tirando o "*" da visualização do site com uma tag de minha autoria */
+ast {
+    font-size: 0;
+}
+
 span {
     display: flex;
     flex-direction: row;
