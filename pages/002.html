@@ -34,6 +34,9 @@
 
                 if (mes < 10) {
                     document.querySelector("#dataA").innerHTML = "0" + mes + "/" + ano + ".";
+                } else if (mes === 13){
+                    mes = new Date().getMonth() + 1;
+                    document.write(ultimoDiaMes(mes, ano) + "/" + mes + "/" + ano);
                 } else {
                     document.querySelector("#dataA").innerHTML = mes + "/" + ano + ".";
                 }
@@ -53,6 +56,9 @@
 
                 if (mes <= 9) {
                     document.querySelector("#dataB").innerHTML = "0" + mes + "/" + ano + ".";
+                } else if (mes === 13){
+                    mes = new Date().getMonth() + 1;
+                    document.write(ultimoDiaMes(mes, ano) + "/" + mes + "/" + ano);
                 } else {
                     document.querySelector("#dataB").innerHTML = mes + "/" + ano + ".";
                 }

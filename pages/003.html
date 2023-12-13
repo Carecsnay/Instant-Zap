@@ -66,16 +66,21 @@
             <strong><ast>*</ast>Bruno B. (Escritório Ivan Contábil):<ast>*</ast></strong><br><br>Saudações!<br><br>
             Por gentileza, <strong><ast>*</ast>quite<ast>*</ast></strong> o seu débito com o escritório para continuarmos prestando serviços a sua empresa (prazo máximo
             <script>
-                const mes = new Date().getMonth() + 2; // +2 meses para o vencimento.
-                const ano = new Date().getFullYear(); 
+                let mes = new Date().getMonth() + 2; // +2 meses para o vencimento.
+                let ano = new Date().getFullYear(); 
 
                 function ultimoDiaMes(mes, ano) {
                     return new Date(ano, mes, 0).getDate();
                 }
-
-                if (mes > 9) {
+                console.log(mes)
+                if (mes > 9 & mes < 12) {
                     document.write(ultimoDiaMes(mes, ano) + "/" + mes + "/" + ano);
-                } else {
+                    
+                } else if (mes === 13){
+                    mes = new Date().getMonth() + 1;
+                    document.write(ultimoDiaMes(mes, ano) + "/" + mes + "/" + ano);
+                }
+                else {
                     document.write(ultimoDiaMes(mes, ano) + "/0" + mes + "/" + ano);
                 }
             </script>), após a data mencionada o Ivan autorizou deixar de entregar suas obrigações mensais. Não nos
