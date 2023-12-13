@@ -7,33 +7,42 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+header div {
     width: 100%;
     margin: 10px 10px 20px 10px;
     font-size: 25px;
     text-align: center;
-    justify-content: center;
     justify-items: center;
     font-weight: bolder;
     color: var(--panel-background-color);
 }
 
-header p {
+header div h1 { 
+    font-size: 2rem;
+}
+
+header div p {
     color: var(--panel-background-color);
     font-weight: 100;
-    font-size: 17.5px;
+    font-size: 1.3rem;
     margin: 5px;
     padding: 0;
 }
 
 body {
+    background-image: url(../src/images/background.jpg);
+
+}
+body main {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    background-image: url(../src/images/background.jpg);
+    margin: auto auto;
+    max-width: 80%;
 }
 
-body div {
+body main div {
     background-color: var(--main-background-color);
     width: 320px;
     margin: 8px;
@@ -46,13 +55,13 @@ body div {
     align-items: center;
 }
 
-body div:hover {
+body main div:hover {
     background-color: var(--secondary-background-color);
     box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
-body svg {
+body main svg {
     color: var(--svg-icon-color);
     width: 20px;
     height: 20px;
@@ -79,20 +88,20 @@ footer a {
 }
 
 @media (min-width: 760px) and (max-width: 770px) {
-    header {
+    header div {
         font-size: 20px;
     }
 
-    header p {
+    header div p {
         font-size: 16.4px;
     }
 
-    body svg {
+    body main svg {
         width: 13.3px;
         height: 13.3px;
     }
 
-    body div{
+    body main div{
         font-size: 15px;
 
     }
@@ -104,22 +113,22 @@ footer a {
 } 
 
 @media (min-width: 0px) and (max-width: 759px) {
-    header {
+    header div {
         font-size: 19px;
         margin: 0 0 10px 0;
     }
 
-    header p {
+    header div p {
         font-size: 16.4px;
         margin: 0;
     }
 
-    body svg {
+    body main svg {
         width: 13.3px;
         height: 13.3px;
     }
 
-    body div{
+    body main div{
         font-size: 15px;
 
     }
@@ -132,21 +141,21 @@ footer a {
 } 
 
 @media (min-width: 300px) and (max-width: 403px) {
-    header {
+    header div {
         font-size: 18px;
         margin: 0 0 10px 0;
     }
 
-    header p {
+    header div p {
         font-size: 14.4px;
     }
 
-    body svg {
+    body main svg {
         width: 13.3px;
         height: 13.3px;
     }
 
-    body div{
+    body main div{
         font-size: 13px;
 
     }
@@ -159,21 +168,21 @@ footer a {
 }
 
 @media (min-width: 250px) and (max-width: 299px) {
-    body svg {
+    body main svg {
         width: 13.3px;
         height: 13.3px;
     }
 
-    header {
+    header div {
         font-size: 14.8px;
         margin: 0;
     }
 
-    header p {
+    header div p {
         font-size: 13px;
     }
 
-    body div{
+    body main div{
         font-size: 13px;
 
     }
